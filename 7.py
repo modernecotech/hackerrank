@@ -11,3 +11,6 @@ print(*sorted(n,key=lambda c:(c.isdigit(), c.isupper(), c in '02468', c)), sep='
 #upper case first, then even digits, then odd digits then lower case letters
 print(*sorted(n,key=lambda c:(c.islower(), c.isdigit(), c in '13579', c)), sep='')
 
+#it is by reverse order. 
+print(*sorted(n,key=lambda c:(c.isupper(), c in "02468", c in "A-Z", c)), sep='')
+
